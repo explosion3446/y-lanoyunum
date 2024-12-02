@@ -1,16 +1,16 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
-const box = 20;
-const canvasSize = 600;
+const box = 20; // Yılanın ve yemin boyutu
+const canvasSize = 600; // Canvas boyutu
 
-let snake = [{x: 9 * box, y: 9 * box}];
-let food = {x: Math.floor(Math.random() * 30) * box, y: Math.floor(Math.random() * 30) * box};
-let direction = "";
+let snake = [{x: 9 * box, y: 9 * box}]; // Başlangıç yılan pozisyonu
+let food = {x: Math.floor(Math.random() * 30) * box, y: Math.floor(Math.random() * 30) * box}; // Başlangıç yemi
+let direction = ""; // Başlangıç yönü
 let score = 0;
 let colorChange = 0;
 
-// Ayarlar
+// Canvas boyutları ayarları
 canvas.width = canvasSize;
 canvas.height = canvasSize;
 
